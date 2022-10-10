@@ -19,7 +19,7 @@ class OnboardingContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(children: [
-        const Spacer(),
+        //const Spacer(),
         Image.asset(
           image,
           height: 500,
@@ -27,8 +27,11 @@ class OnboardingContent extends StatelessWidget {
         Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           ...List.generate(
               slides.length,
-              (index) => DotIndicator(
-                    isActive: index == _pageIndex,
+              (index) => Padding(
+                    padding: const EdgeInsets.only(right: 6),
+                    child: DotIndicator(
+                      isActive: index == _pageIndex,
+                    ),
                   )),
         ]),
         const Spacer(),

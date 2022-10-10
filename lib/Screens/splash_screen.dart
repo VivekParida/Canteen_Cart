@@ -23,8 +23,6 @@ class _splashScreenState extends State<splashScreen> {
         ),
         splashIconSize: 250,
         backgroundColor: Color.fromRGBO(245, 245, 245, 1),
-        nextScreen: onBoardingScreenState(
-          onSkip: () {},
-        ));
+        nextScreen: onBoardingScreenState());
   }
 }

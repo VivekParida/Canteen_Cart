@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mr_corporate/Screens/OTP/Components/body.dart';
 
 class OTPstate extends StatefulWidget {
   const OTPstate({Key? key}) : super(key: key);
@@ -10,6 +11,6 @@ class OTPstate extends StatefulWidget {
 class _OTPstateState extends State<OTPstate> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(body: Body());
   }
 }

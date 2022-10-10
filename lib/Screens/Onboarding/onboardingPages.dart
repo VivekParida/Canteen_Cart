@@ -1,22 +1,26 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
+import 'package:mr_corporate/Screens/Onboarding/header_section.dart';
 import 'package:mr_corporate/Screens/Onboarding/sliderModal.dart';
 import 'package:mr_corporate/Screens/Onboarding/onboarding_info.dart';
+import 'package:mr_corporate/Screens/Onboarding/dot_indicator.dart';
+import 'package:mr_corporate/Screens/terms_and_conditions.dart';
 
 class onBoardingScreenState extends StatefulWidget {
-  final VoidCallback onSkip;
-  const onBoardingScreenState({Key? key, required this.onSkip})
-      : super(key: key);
+  const onBoardingScreenState({
+    Key? key,
+  }) : super(key: key);
 
   @override
   State<onBoardingScreenState> createState() => _onBoardingScreenStateState();
 }
 
-class _onBoardingScreenStateState extends State<onBoardingScreenState> {
-  late PageController _pageController;
+Future<void> goToLoginPage() async {}
 
+class _onBoardingScreenStateState extends State<onBoardingScreenState> {
   int _pageIndex = 0;
+  late PageController _pageController;
 
   @override
   void initState() {
@@ -36,16 +40,17 @@ class _onBoardingScreenStateState extends State<onBoardingScreenState> {
       body: SafeArea(
           child: Padding(
         padding: EdgeInsets.only(
-          left: 48,
+          //left: 48,
           bottom: 48,
         ),
         child: Column(
           children: [
+            HeaderSection(onSkip: goToLoginPage),
             Expanded(
               child: PageView.builder(
                 itemCount: slides.length,
                 controller: _pageController,
-                onPageChanged: (index) {
+                onPageChanged: (int index) {
                   setState(() {
                     _pageIndex = index;
                   });
@@ -61,6 +66,13 @@ class _onBoardingScreenStateState extends State<onBoardingScreenState> {
               width: 333,
               child: ElevatedButton(
                 onPressed: () {
+                  print(_pageIndex);
+                  if (_pageIndex == slides.length - 1) {
+                    Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => TermsAndConditionsState()));
+                  }
                   _pageController.nextPage(
                       duration: Duration(microseconds: 300),
                       curve: Curves.ease);

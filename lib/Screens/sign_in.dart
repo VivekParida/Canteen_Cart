@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mr_corporate/Screens/otp.dart';
+import 'package:mr_corporate/Screens/OTP/otp_screen.dart';
 
 class SignUpState extends StatefulWidget {
   const SignUpState({Key? key}) : super(key: key);
@@ -15,6 +15,7 @@ class _SignUpStateState extends State<SignUpState> {
       body: Padding(
         padding: const EdgeInsets.all(48.0),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Spacer(),
             Text(
@@ -50,7 +51,9 @@ class _SignUpStateState extends State<SignUpState> {
                       maxLength: 10,
                       decoration: InputDecoration(
                         fillColor: Color.fromRGBO(238, 118, 35, 1),
-                        border: OutlineInputBorder(),
+                        border: OutlineInputBorder(
+                            borderSide: BorderSide(
+                                color: Color.fromRGBO(238, 118, 35, 1))),
                         hintText: 'Enter your phone number',
                         hintStyle: TextStyle(
                           color: Color.fromRGBO(209, 209, 209, 1),
@@ -68,7 +71,13 @@ class _SignUpStateState extends State<SignUpState> {
                       width: 333.0,
                       height: 53.0,
                       child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => OTPstate(),
+                              ));
+                        },
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 Color.fromRGBO(238, 118, 35, 1)),
@@ -111,18 +120,22 @@ class _SignUpStateState extends State<SignUpState> {
                 height: 53.0,
                 child: ElevatedButton(
                   onPressed: () {},
-                  style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(
-                          Color.fromRGBO(238, 118, 35, 1)),
-                      shape: MaterialStateProperty.all(RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(8)))),
+                  style: ElevatedButton.styleFrom(
+                    primary: Color.fromARGB(255, 255, 255, 255),
+                    elevation: 0,
+                    side: BorderSide(
+                        color: Color.fromRGBO(238, 118, 35, 1), width: 1),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                    ),
+                  ),
                   child: Center(
                     child: Text(
-                      'Sign as Guest',
+                      'Join Guest',
                       style: TextStyle(
                         fontFamily: 'Gilroy',
                         fontSize: 18,
-                        color: Colors.white,
+                        color: Color.fromRGBO(238, 118, 35, 1),
                         height: 1,
                       ),
                       textAlign: TextAlign.center,
