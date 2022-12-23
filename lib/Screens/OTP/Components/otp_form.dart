@@ -50,9 +50,25 @@ class _OtpFormState extends State<OtpForm> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
-                width: 32,
+                width: 40,
                 height: 68,
                 child: TextFormField(
+                  decoration: InputDecoration(
+                    fillColor: Color.fromRGBO(238, 118, 35, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    border: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    hintText: 'Enter your phone number',
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(209, 209, 209, 1),
+                      fontFamily: 'Gilroy',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                   autofocus: true,
                   style: TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
@@ -63,9 +79,25 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: 32,
+                width: 40,
                 height: 68,
                 child: TextFormField(
+                  decoration: InputDecoration(
+                    fillColor: Color.fromRGBO(238, 118, 35, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    border: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    hintText: 'Enter your phone number',
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(209, 209, 209, 1),
+                      fontFamily: 'Gilroy',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                   focusNode: pin2FocusNode,
                   style: TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
@@ -75,9 +107,25 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: 32,
+                width: 40,
                 height: 68,
                 child: TextFormField(
+                  decoration: InputDecoration(
+                    fillColor: Color.fromRGBO(238, 118, 35, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    border: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    hintText: 'Enter your phone number',
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(209, 209, 209, 1),
+                      fontFamily: 'Gilroy',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                   focusNode: pin3FocusNode,
                   style: TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
@@ -87,9 +135,25 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: 32,
+                width: 40,
                 height: 68,
                 child: TextFormField(
+                  decoration: InputDecoration(
+                    fillColor: Color.fromRGBO(238, 118, 35, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    border: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    hintText: 'Enter your phone number',
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(209, 209, 209, 1),
+                      fontFamily: 'Gilroy',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                   focusNode: pin4FocusNode,
                   style: TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
@@ -98,9 +162,25 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: 32,
+                width: 40,
                 height: 68,
                 child: TextFormField(
+                  decoration: InputDecoration(
+                    fillColor: Color.fromRGBO(238, 118, 35, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    border: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    hintText: 'Enter your phone number',
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(209, 209, 209, 1),
+                      fontFamily: 'Gilroy',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                   focusNode: pin5FocusNode,
                   style: TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
@@ -109,9 +189,25 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: 32,
+                width: 40,
                 height: 68,
                 child: TextFormField(
+                  decoration: InputDecoration(
+                    fillColor: Color.fromRGBO(238, 118, 35, 1),
+                    enabledBorder: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    border: OutlineInputBorder(
+                        borderSide:
+                            BorderSide(color: Color.fromRGBO(238, 118, 35, 1))),
+                    hintText: 'Enter your phone number',
+                    hintStyle: TextStyle(
+                      color: Color.fromRGBO(209, 209, 209, 1),
+                      fontFamily: 'Gilroy',
+                      fontSize: 16.0,
+                      fontWeight: FontWeight.w300,
+                    ),
+                  ),
                   focusNode: pin6FocusNode,
                   style: TextStyle(fontSize: 24),
                   keyboardType: TextInputType.number,
